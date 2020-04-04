@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+/*
+Tags
+*/
+
+* {
+	margin: 0;
+	padding: 2px;
+}
+
+body {
+	/*
+	Fonts available: 
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Rubik', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	font-family: 'Overpass Mono', monospace;
+	font-family: 'Ubuntu Mono', monospace;
+	*/
+
+    font-family: 'Noto Sans', sans-serif;
+	font-size: 18px;
+
+	background-color: #1E2021;
+	color: #C4C0B7;
+
+	margin-bottom: 300px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 25px;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #43B0E9;
+}
+
+table {
+	background-color: #35393B;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	overflow: auto;
+}
+
+td, th{
+	text-align: center;
+
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+p {
+	line-height: 2;
+	margin: 60px auto;
+}
+
+pre {
+	overflow: auto;
+}
+
+pre code {
+	border-radius: 10px;
+	/*font-family: 'Ubuntu Mono', monospace;*/
+	font-size: 15px;
+}
+
+pre code span {
+	padding: 0;
+}
+
+/*
+ID's
+*/
+
+#main {
+	text-align: left;
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 3vh;
+}
+
+#avatar {
+	width: 9em;
+	border-radius: 10%;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+#root {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 1px;
+	margin-top: 1px;
+
+}
+
+#presentation {
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+
+#register {
+	padding: 15px;
+	background-color: #1F1D1D;
+	border-radius: 10px;
+}
+
+#memory-wrapper {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-bottom: 30px;
+}
+
+#memory {
+	padding: 15px;
+	padding-top: 0px;
+	background-color: #1F1D1D;
+	border-radius: 10px;
+}
+
+#memory-explanation {
+	margin-right: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#register code {
+	line-height: normal;
+}
+
+#links{
+	margin-top: 80px;
+}
+
+/*
+Classes
+*/
+
+.wrapper {
+	padding: 0;
+}
+
+.wrapper p {
+	margin: 0;
+}
+
+.content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+
+	padding-top: 20px;
+}
+
+.replaceable-content {
+	max-height: 300px;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.header {
+	margin: 0 auto;
+	padding: 0 1.75em;
+}
+
+.logo-wrapper {
+	text-align: center;
+}
+
+.logo {
+	width: 2em;
+	border-radius: 100%;
+	fill: red;
+}
+
+.title {
+
+}
+
+.outer-code {
+	color: #00FF00;
+	background-color: #131414;
+
+	border-radius: 10px;
+	padding-left: 40px;
+	/*padding-top: 15px;
+	padding-bottom: 15px;*/
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	overflow: auto;
+}
+
+.explanation-button, .replace-button {
+	background-color: #0A0A0A;
+	color: #BDBDBD;
+	width: 100%;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	font-size: 18px;
+}
+
+.explanation-button:hover, .replace-button:hover {
+	background-color: #303030;
+}
+
+.list-header {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*
+Responsive part
+*/
+
+@media only screen and (max-width: 800px) {
+
+	body {
+		margin: 5px;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-size: 13px;
+	}
+
+	#main {
+		width: 90%;
+		margin: .5px 10px;
+
+		/*text-align: center;*/
+
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#avatar {
+		width: 6em;
+	}
+
+	#root {
+		font-size: 18px;
+	}
+
+	#presentation {
+		font-size: 13px;
+	}
+
+	#stack {
+		width: 100%;
+	}
+
+
+	.logo {
+		width: 1.5em;
+	}
+
+	.text {
+		font-size: 14px;
+	}
+
+}
