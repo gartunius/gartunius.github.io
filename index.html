@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|PT+Sans|Rubik|Source+Sans+Pro|Roboto|Montserrat|Raleway|Titillium+Web|Ubuntu|Overpass+Mono|Ubuntu+Mono|Noto+Sans|Work+Sans&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="./CssFiles/main.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="./CssFiles/NavigationBar/navigationBar.css" media="screen">
 
 	<link rel="stylesheet" type="text/css" href="./JsFiles/highlightJS/styles/monokai.css">
 
@@ -26,7 +27,7 @@
 		<h1 id="root">gartunius@3l10t</h1>
 		<h2 id="presentation">Just a wannabe hacker writing stuff about computers</h2>
 		<h3 id="presentation">(don't take it too seriously :P )</h3>
-			
+
 		<div class="logo-wrapper">
 
 			<a class="link" href="https://github.com/gartunius">
@@ -35,16 +36,33 @@
 			<a class="link" href="https://twitter.com/gartunius">
 				<img class="logo" src="./ExtraFiles/SvgFiles/twitter-icon.svg" alt="twiiter-icon">
 			</a>
-	
+
 		</div>
-		
+
+	</div>
+
+	<div id="navBar" class="navBar">
+		<div class="posts-dropdown">
+			<button type="button" onclick="showPostMenu()" id="posts-button" class="nav-bar-button">Posts</button>
+			<div id="post-dropdown-content" class="dropdown-menu">
+				<a href="https://gartunius.github.io/">Home</a>
+			</div>
+		</div>
+		<div class="random-dropdown">
+			<button type="button" onclick="showRandomMenu()" id="random-button" class="nav-bar-button">Random</button>
+			<div id="random-dropdown-content" class="dropdown-menu">
+			</div>
+		</div>
+		<div class="about-dropdown">
+			<button type="button" onclick="openAbout()" id="about-button" class="nav-bar-button">About</button>
+		</div>
 	</div>
 
 	<div id="main">
-	
 <h1 id="my-place-with-kinda-random-stuff-about-computers">My place with "kinda random" stuff about computers</h1>
 
 <p>So after my failed attempt to write a post about assembly ( I didn't wanna do a bad post, and I felt that for a good one, there would be a lot of new things to learn, and I'm not that interested now, so I'll just push that to whenever I fell like :P ), I also decided to make writteups on some CTFs/Wargames that I've played...So this is what this blog is about...at least for now...hope you like it :P</p>
-	</div>	
+	</div>
+	<script type="text/javascript" src="./JsFiles/NavigationBar/navigationBar.js" ></script>
 </body>
 </html>
