@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*---------------------------------
+               Bar
+---------------------------------*/
+
+.navBar {
+	/*Colors*/
+	background-color: #141414;
+
+	/*Geometry*/
+	width: 800px;
+
+	/*border-width: 1px;
+	border-color: #FAFBFC;
+	border-style: solid;*/
+	border-radius: 10px;
+
+	/*Effects*/
+
+	/*Space*/
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	padding-left: 0px;
+	padding-right: 0px;
+
+	display: grid;
+
+	/*Grid*/
+	grid-template-columns: 33% 33% 33%;
+
+}
+
+.navBar > * {
+	padding-left: 0px;
+	padding-right: 0px;
+
+	transition: all 0.5s ease;
+}
+
+/*Class to toggle the border radius of bottom left border on nav bar*/
+.show-left-border-curve {
+	border-bottom-left-radius: 0px;
+}
+
+
+/*---------------------------------
+             Buttons
+---------------------------------*/
+
+.nav-bar-button {
+	/*Colors*/
+	color: #FAFBFC;
+	background-color: #141414;
+
+	/*Geometry*/
+	width: 100%;
+
+	border: none;
+	border-width: 1px;
+	border-color: #FAFBFC;
+	border-radius: 10px;
+
+	/*Space*/
+	padding-left: 0px;
+	padding-right: 0px;
+
+	margin-left: 4px;
+
+	display: ;
+
+	/*Text*/
+	font-size: 17px;
+
+}
+
+/*-------Button on Hover--------*/
+
+.nav-bar-button:hover, .nav-bar-button:focus {
+	/*Colors*/
+	background-color: #3B3B3B;
+
+	/*Outside Things*/
+	cursor: pointer;
+
+}
+
+/*---------------------------------
+          Dropdown Menu
+---------------------------------*/
+
+.dropdown-menu {
+	/*Colors*/
+	background-color: #141414;
+
+	/*Text*/
+	text-align: center;
+
+	/*Effects*/
+	box-shadow: 0px 15px 10px 1px rgba(0, 0, 0, 0.3);
+
+	/*Geometry*/
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+
+	/*Space*/
+	z-index: 1;
+	display: none;
+	position: absolute;
+
+	padding: 10px 0px 30px 4px;
+
+}
+
+/*Class to be added to dropdown menu class*/
+.show {
+	display: block;
+}
+
+/*---------------------------------
+             Links
+---------------------------------*/
+
+.navBar a {
+	/*Colors*/
+	color: #66D9EF;
+
+	/*Space*/
+	display: block;
+
+}
+
+.navBar a:hover {
+	/*Colors*/
+	background-color: #3B3B3B;
+}
