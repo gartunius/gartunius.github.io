@@ -52,8 +52,8 @@ window.onclick = function(event) {
 		for (i = 0; i < dropdowns.length; i++) {
 			var openDropdown = dropdowns[i];
 			if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.toggle('show');
-				navBar.classList.toggle("show-left-border-curve");
+				openDropdown.classList.remove('show');
+				navBar.classList.remove("show-left-border-curve");
 			}
 		}
 	}
