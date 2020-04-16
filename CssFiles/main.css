@@ -64,9 +64,13 @@ td, th{
 	padding-right: 25px;
 }
 
+ol {
+	margin-left: 3%;
+}
+
 p {
 	line-height: 2;
-	margin: 60px auto;
+	margin: 30px auto;
 }
 
 pre {
@@ -74,9 +78,11 @@ pre {
 }
 
 pre code {
+	padding: 0px;
 	border-radius: 10px;
 	/*font-family: 'Ubuntu Mono', monospace;*/
 	font-size: 15px;
+	margin-bottom: 20px;
 }
 
 pre code span {
@@ -89,7 +95,7 @@ ID's
 
 #main {
 	text-align: left;
-	width: 800px;
+	width: 850px;
 	margin: 0 auto;
 	margin-top: 3vh;
 }
