@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/*
-Fonts available:
+	/*
+	Fonts available:
 
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -14,16 +14,10 @@ Fonts available:
 	font-family: 'Overpass Mono', monospace;
 	font-family: 'Ubuntu Mono', monospace;
 	font-family: 'Quicksand', sans-serif;
-*/
-
-/*Text*/
-/*Colors*/
-/*Space*/
-/*Geometry*/
-
+	*/
 
 /*----------------------------------------
-           General Settings
+             Page settings
 ----------------------------------------*/
 
 * {
@@ -34,12 +28,12 @@ Fonts available:
 
 body {
 	/*Text*/
-	font-size: 18px;
 	font-family: 'Noto Sans', sans-serif;
+	font-size: 18px;
 
 	/*Colors*/
-	color: #FAFBFC;
 	background-color: #1C1C1C;
+	color: #FAFBFC;
 
 	/*Space*/
 	margin-bottom: 300px;
@@ -47,8 +41,8 @@ body {
 
 h1, h2, h3, h4, h5 {
 	/*Text*/
-	font-size: 25px;
 	font-family: 'Titillium Web', sans-serif;
+	font-size: 25px;
 
 	/*Space*/
 	margin-top: 30px;
@@ -67,15 +61,14 @@ table {
 	/*Colors*/
 	background-color: #35393B;
 
-	/*Space*/
-	overflow: auto;
-	margin: 0 auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-
 	/*Geometry*/
 	border-radius: 10px;
 
+	/*Space*/
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	overflow: auto;
 }
 
 td, th{
@@ -107,12 +100,12 @@ pre code {
 	/*Text*/
 	font-size: 15px;
 
+	/*Geometry*/
+	border-radius: 10px;
+
 	/*Space*/
 	margin-bottom: 20px;
 	padding: 0px;
-
-	/*Geometry*/
-	border-radius: 10px;
 }
 
 pre code span {
@@ -121,26 +114,16 @@ pre code span {
 }
 
 /*----------------------------------------
-            Page Header
+          Page Header
 ----------------------------------------*/
 
-/*Classes*/
-.header {
+#main {
+	text-align: left;
+	width: 850px;
 	margin: 0 auto;
-	padding: 0 1.75em;
+	margin-top: 3vh;
 }
 
-.logo-wrapper {
-	text-align: center;
-}
-
-.logo {
-	width: 2em;
-	border-radius: 100%;
-	fill: red;
-}
-
-/*IDs*/
 #avatar {
 	width: 9em;
 	border-radius: 10%;
@@ -166,79 +149,172 @@ pre code span {
 	margin-top: 1px;
 }
 
+#register {
+	padding: 15px;
+	background-color: #1F1D1D;
+	border-radius: 10px;
+}
 
-/*----------------------------------------
-                Content
-----------------------------------------*/
-#main {
-	/*Text*/
-	text-align: left;
+#memory-wrapper {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-bottom: 30px;
+}
 
-	/*Space*/
+#memory {
+	padding: 15px;
+	padding-top: 0px;
+	background-color: #1F1D1D;
+	border-radius: 10px;
+}
+
+#memory-explanation {
+	margin-right: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#register code {
+	line-height: normal;
+}
+
+#links{
+	margin-top: 80px;
+}
+
+/*
+Classes
+*/
+
+.wrapper {
+	padding: 0;
+}
+
+.wrapper p {
+	margin: 0;
+}
+
+.content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+
+	padding-top: 20px;
+}
+
+.replaceable-content {
+	max-height: 300px;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.header {
 	margin: 0 auto;
-	margin-top: 3vh;
+	padding: 0 1.75em;
+}
 
-	/*Geometry*/
-	width: 850px;
+.logo-wrapper {
+	text-align: center;
+}
+
+.logo {
+	width: 2em;
+	border-radius: 100%;
+	fill: red;
+}
+
+.title {
 
 }
 
-/*----------------------------------------
-      Responsive General Settings
-----------------------------------------*/
-@media only screen and ( max-width: 800px) {
+.outer-code {
+	color: #00FF00;
+	background-color: #131414;
+
+	border-radius: 10px;
+	padding-left: 40px;
+	/*padding-top: 15px;
+	padding-bottom: 15px;*/
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	overflow: auto;
+}
+
+.explanation-button, .replace-button {
+	background-color: #0A0A0A;
+	color: #BDBDBD;
+	width: 100%;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	font-size: 18px;
+}
+
+.explanation-button:hover, .replace-button:hover {
+	background-color: #303030;
+}
+
+.list-header {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*
+Responsive part
+*/
+
+@media only screen and (max-width: 800px) {
+
 	body {
-		/*Geometry*/
 		margin: 5px;
 	}
 
 	h1,h2,h3,h4,h5,h6 {
-		/*Text*/
 		font-size: 13px;
 	}
-}
 
-/*----------------------------------------
-            Responsive Header
-----------------------------------------*/
-@media only screen and ( max-width: 800px) {
+	#main {
+		width: 90%;
+		margin: .5px 10px;
+
+		/*text-align: center;*/
+
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	#avatar {
-		/*Geometry*/
 		width: 6em;
 	}
 
 	#root {
-		/*Text*/
 		font-size: 18px;
 	}
 
 	#presentation {
-		/*Text*/
 		font-size: 13px;
 	}
 
-}
-
-/*----------------------------------------
-            Responsive Content
-----------------------------------------*/
-@media only screen and ( max-width: 800px) {
-	#main {
-		/*Space*/
-		margin: .5px 10px;
-		margin-left: auto;
-		margin-right: auto;
-
-		/*Geometry*/
-		width: 90%;
+	#stack {
+		width: 100%;
 	}
+
+
+	.logo {
+		width: 1.5em;
+	}
+
+	.text {
+		font-size: 14px;
+	}
+
 }
 
-/*----------------------------------------
-        Firefox Speciffic code
-----------------------------------------*/
+/*--------------------------------------------
+    Fix firefox dotted line when on focus
+--------------------------------------------*/
+
 button::-moz-focus-inner {
-	/*Geometry*/
 	border: 0;
 }
-

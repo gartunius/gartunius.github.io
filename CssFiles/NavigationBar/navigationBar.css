@@ -14,7 +14,7 @@
 	/*border-width: 1px;
 	border-color: #FAFBFC;
 	border-style: solid;*/
-	border-radius: 10px;
+	border-radius: 5px;
 
 	/*Effects*/
 
@@ -25,10 +25,12 @@
 
 	padding-left: 0px;
 	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 
-	display: grid;
 
 	/*Grid*/
+	display: grid;
 	grid-template-columns: 33% 33% 33%;
 
 }
@@ -61,7 +63,7 @@
 	border: none;
 	border-width: 1px;
 	border-color: #FAFBFC;
-	border-radius: 10px;
+	border-radius: 3px;
 
 	/*Space*/
 	padding-left: 0px;

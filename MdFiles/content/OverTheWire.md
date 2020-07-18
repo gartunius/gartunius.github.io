@@ -10,7 +10,7 @@ Level 0
 
 The [level0](https://overthewire.org/wargames/bandit/bandit0.html) was pretty simple just an ssh connection and a cat command, and in this case since this is the first level the password is the same as the username.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit0@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit0@bandit.labs.overthewire.org
 
 bandit0@bandit.labs.overthewire.org's password:
 [...]
@@ -28,7 +28,7 @@ Level 1
 
 The thing about [level1](https://overthewire.org/wargames/bandit/bandit1.html) is that '-' is not a "good" file name, because whenever you try to 'ls' the file, the shell will interpret as an attempt of pass an argument and won't give you the content of the file, so you have to either give it's full path, or it's relative one, which is what I did.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit1@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit1@bandit.labs.overthewire.org
 
 bandit1@bandit.labs.overthewire.org's password:
 [...]
@@ -49,9 +49,9 @@ Level 2
 
 In [level2](https://overthewire.org/wargames/bandit/bandit2.html) what you have to see is that, when you ask it to 'ls' a file with spaces on the name, without using any special "markers"(I don't know the proper name so I just made that up), it will try to read each string separated by the spaces as a different command, so just either use a backslash before each space or put the name in between quotes.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit2@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit2@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit2@bandit.labs.overthewire.org's password:
 [...]
 
 bandit2@bandit:~$ ls
@@ -67,9 +67,9 @@ Leve 3
 
 On [level3](https://overthewire.org/wargames/bandit/bandit3.html) you just have to look for the hidden directories, just use 'ls -la'.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit3@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit3@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit3@bandit.labs.overthewire.org's password:
 [...]
 
 bandit3@bandit:~$ ls
@@ -94,9 +94,9 @@ Level 4
 
 Also I have no ideia why the colors are different from the other logs. （￣□￣；）
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit4@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit4@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit4@bandit.labs.overthewire.org's password:
 [...]
 
 bandit4@bandit:~$ ls
@@ -134,9 +134,9 @@ In [Level5](https://overthewire.org/wargames/bandit/bandit5.html) you are given 
 
 And to find that file you can just use the 'find' command again.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit5@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit5@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit5@bandit.labs.overthewire.org's password:
 [...]
 
 bandit5@bandit:~$ ls
@@ -158,9 +158,9 @@ Level 6
 
 [Level6](https://overthewire.org/wargames/bandit/bandit6.html) is another 'find' command level, it's pretty much like the others before, just get the right parameters and you'll get the flag file.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit6@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit6@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit6@bandit.labs.overthewire.org's password:
 [...]
 
 bandit6@bandit:~$ ls
@@ -186,9 +186,9 @@ Level 7
 
 In [Level7](https://overthewire.org/wargames/bandit/bandit7.html) is pretty simple, as long as you're familiar with the 'grep' command. If you're not, grep is basically a command to find the line that has a specific pattern in some text. In this case the pattern is the full string that we want.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit7@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit7@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit7@bandit.labs.overthewire.org's password:
 [...]
 
 bandit7@bandit:~$ ls
@@ -211,9 +211,9 @@ Level 8
 On [Level8](https://overthewire.org/wargames/bandit/bandit8.html) just use the command 'uniq' to show the amount of times each string has appeared on the file.
 
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit8@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit8@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit8@bandit.labs.overthewire.org's password:
 [...]
 bandit8@bandit:~$ uniq -c data.txt
 	10 07iR6PwHwihvQ3av1fqoRjICCulpoyms
@@ -233,9 +233,9 @@ Level 9
 
 The [level9](https://overthewire.org/wargames/bandit/bandit9.html) is also a simple one, just learn one command and you'll pass, this time is the 'string' command, which "print the sequences of printable characters in files" so just run it with the file as the input.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit9@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit9@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit9@bandit.labs.overthewire.org's password:
 [...]
 bandit9@bandit:~$ ls
 data.txt
@@ -243,12 +243,10 @@ bandit9@bandit:~$ file data.txt
 data.txt: data
 bandit9@bandit:~$ strings data.txt
 .MBB
-`B6ha
 [...]
 xQf]
 7li&
 ========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
-ypi*
 lTq;
 [...]
 Cl/(;
@@ -263,9 +261,9 @@ Level 10
 The [level10](https://overthewire.org/wargames/bandit/bandit10.html) is about encoded data, which is just convert information, which in this case means that our flag has to be converted back from 'base64' to a readable string, and for that we use the 'base64' command.
 
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit10@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit10@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit10@bandit.labs.overthewire.org's password:
 [...]
 bandit10@bandit:~$ ls
 data.txt
@@ -284,9 +282,9 @@ Level 11
 
 [Level11](https://overthewire.org/wargames/bandit/bandit11.html) is a [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher) problem, you can do it by hand, you can create a script or you can just use any website that does it for you.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit11@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit11@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit11@bandit.labs.overthewire.org's password:
 [...]
 bandit11@bandit:~$ ls
 data.txt
@@ -303,9 +301,9 @@ Level 12
 
 [Level12](https://overthewire.org/wargames/bandit/bandit12.html) it takes a lot of "manual work" becausue it's pretty much just decompress file after file, and if you don't know the file type of compression just use the 'file' command, after that it's just decompress all the files and 'cat' the final file.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit12@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit12@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit12@bandit.labs.overthewire.org's password:
 [...]
 bandit12@bandit:~$ ls
 data.txt
@@ -329,9 +327,9 @@ Level 13
 
 On [level13](https://overthewire.org/wargames/bandit/bandit13.html) you'll find not a file with a flag or anything, but a 'sshkey' file, which will be used to log in the next level, to get the file in your machine you'll need to download it, with 'scp' you can make downloads trough ssh.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh -p 2220 bandit13@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh -p 2220 bandit13@bandit.labs.overthewire.org
 
-bandit1@bandit.labs.overthewire.org's password:
+bandit13@bandit.labs.overthewire.org's password:
 [...]
 bandit13@bandit:~$ ls
 sshkey.private
@@ -339,12 +337,12 @@ bandit13@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
 
-ゃない@3l10t: ~$ scp -P 2220 bandit13@bandit.labs.overthewire.org:~/sshkey.private $(pwd)
+chomuske@random: ~$ scp -P 2220 bandit13@bandit.labs.overthewire.org:~/sshkey.private $(pwd)
 [...]
 bandit13@bandit.labs.overthewire.org's password:
 sshkey.private                                           100% 1679     7.0KB/s   00:00
 
-ゃない@3l10t: ~$ cat sshkey.private
+chomuske@random: ~$ cat sshkey.private
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEAxkkOE83W2cOT7IWhFc9aPaaQmQDdgzuXCv+ppZHa++buSkN+
 gg0tcr7Fw8NLGa5+Uzec2rEg0WmeevB13AIoYp0MZyETq46t+jk9puNwZwIt9XgB
@@ -379,9 +377,9 @@ Level 14
 On [level14](https://overthewire.org/wargames/bandit/bandit14.html) there are two things to do, first log in with the file you've downloaded from the previous level, and make a connection to the bandit machine from the bandit machine, meaning a [localhost](https://en.wikipedia.org/wiki/Localhost) connection, and in there you'll have to provide the password of the current level, which you didn't get, all you got is the sshkey file, so if you've read the [bandit13-14](https://overthewire.org/wargames/bandit/bandit14.html) page you know where to look.
 
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit15@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit14@bandit.labs.overthewire.org
 
-bandit15@bandit.labs.overthewire.org's password:
+bandit14@bandit.labs.overthewire.org's password:
 [...]
 bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
@@ -399,7 +397,7 @@ Level 15
 
 In [level15](https://overthewire.org/wargames/bandit/bandit15.html) you'll have to do the same thing as the previous level, but this time over 'ssl', and for that you'll have to see some different commands.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit15@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit15@bandit.labs.overthewire.org
 
 bandit15@bandit.labs.overthewire.org's password:
 [...]
@@ -430,9 +428,9 @@ Level 16
 [Level16](https://overthewire.org/wargames/bandit/bandit16.html) is kinda a combination of some of the previous levels, because you'll have to make the localhost connection trough ssl, then you'll have to pass a password there, for you to get a 'sshkey' file
 
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit15@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit16@bandit.labs.overthewire.org
 
-bandit15@bandit.labs.overthewire.org's password:
+bandit16@bandit.labs.overthewire.org's password:
 [...]
 bandit16@bandit:~$ ls
 bandit16@bandit:~$ nmap -p31000-32000 localhost
@@ -495,9 +493,9 @@ Level 17
 
 On [level17](https://overthewire.org/wargames/bandit/bandit17.html) you'll see a new command 'diff', wich pretty much shows you all the differences between the files passed as parameters.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit15@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit17@bandit.labs.overthewire.org
 
-bandit15@bandit.labs.overthewire.org's password:
+bandit17@bandit.labs.overthewire.org's password:
 [...]
 bandit17@bandit:~$ ls
 passwords.new  passwords.old
@@ -520,18 +518,18 @@ Level 18
 
 [Level18](https://overthewire.org/wargames/bandit/bandit18.html) is strange, the way I solved, which is probably not the most right way, is by downloading the file with 'scp'.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit15@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit18@bandit.labs.overthewire.org
 
-bandit15@bandit.labs.overthewire.org's password:
+bandit18@bandit.labs.overthewire.org's password:
 [...]
-ゃない@3l10t: ~$ scp -P 2220 bandit18@bandit.labs.overthewire.org:~/readme $(pwd)
+chomuske@random: ~$ scp -P 2220 bandit18@bandit.labs.overthewire.org:~/readme $(pwd)
 This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
 
 bandit18@bandit.labs.overthewire.org's password:
 readme                                             100%   33     0.1KB/s   00:00
-ゃない@3l10t: ~$ ls
+chomuske@random: ~$ ls
 readme
-ゃない@3l10t: ~$ cat readme
+chomuske@random: ~$ cat readme
 IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
 </code></pre>
 
@@ -539,7 +537,7 @@ Level 19
 
 In [level19](https://overthewire.org/wargames/bandit/bandit19.html) you'll have to use a '[setuid](https://en.wikipedia.org/wiki/Setuid)' binary to run a command as the user with the proper permissions, so you can read the password file, that because of one of the previous levels you already know where they are.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit19@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit19@bandit.labs.overthewire.org
 
 bandit19@bandit.labs.overthewire.org's password:
 [...]
@@ -561,7 +559,7 @@ Level 20
 
 On [level20](https://overthewire.org/wargames/bandit/bandit20.html) you have to see some things about background jobs.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit20@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit20@bandit.labs.overthewire.org
 
 bandit20@bandit.labs.overthewire.org's password:
 [...]
@@ -607,9 +605,9 @@ Level 21
 
 On [level21](https://overthewire.org/wargames/bandit/bandit21.html) you'll have to read the files and 'cat' the right file.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit20@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit21@bandit.labs.overthewire.org
 
-bandit20@bandit.labs.overthewire.org's password:
+bandit21@bandit.labs.overthewire.org's password:
 [...]
 bandit21@bandit:~$ ls
 bandit21@bandit:~$ clear
@@ -635,9 +633,9 @@ Level 22
 
 On [level22](https://overthewire.org/wargames/bandit/bandit22.html) you have to run the main part of the script with the proper name to get the directory of the flag.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit20@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit22@bandit.labs.overthewire.org
 
-bandit20@bandit.labs.overthewire.org's password:
+bandit22@bandit.labs.overthewire.org's password:
 [...]
 bandit22@bandit:~$ ls
 bandit22@bandit:~$ cd /etc/cron.d
@@ -673,7 +671,7 @@ Level 23
 
 On [level23](https://overthewire.org/wargames/bandit/bandit23.html) you're given a script that runs all the code in one directory as the user from the next level, so you'll just have to make a script to get the password from /etc/bandit_pass/bandit24.
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit23@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit23@bandit.labs.overthewire.org
 
 bandit23@bandit.labs.overthewire.org's password:
 [...]
@@ -692,7 +690,7 @@ myname=$(whoami)
 
 cd /var/spool/$myname
 echo "Executing and deleting all scripts in /var/spool/$myname:"
-for i in * .*;
+for i in * .\*;
 do
     if [ "$i" != "." -a "$i" != ".." ];
     then
@@ -701,18 +699,18 @@ do
 	rm -f ./$i
     fi
 done
-bandit23@bandit:/tmp/ゃない23$ cat solution.sh
-cat /etc/bandit_pass/bandit24 > /tmp/ゃない23/flag.txt
-bandit23@bandit:/tmp/ゃない23$ chmod +x solution.sh
-bandit23@bandit:/tmp/ゃない23$ cp solution.sh /var/spool/bandit24/
-bandit23@bandit:/tmp/ゃない23$ chmod -x flag.txt
-bandit23@bandit:/tmp/ゃない23$ ls -lA
+bandit23@bandit:/tmp/shiro23$ cat solution.sh
+cat /etc/bandit_pass/bandit24 > /tmp/shiro23/flag.txt
+bandit23@bandit:/tmp/shiro23$ chmod +x solution.sh
+bandit23@bandit:/tmp/shiro23$ cp solution.sh /var/spool/bandit24/
+bandit23@bandit:/tmp/shiro23$ chmod -x flag.txt
+bandit23@bandit:/tmp/shiro23$ ls -lA
 total 8
 -rw-rw-rw- 1 bandit23 root 33 Jul 17 20:22 flag.txt
 -rwxrwxrwx 1 bandit23 root 58 Jul 17 20:17 solution.sh
-bandit23@bandit:/tmp/ゃない23$ cat flag.txt
+bandit23@bandit:/tmp/shiro23$ cat flag.txt
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
-bandit23@bandit:/tmp/ゃない23$ exit
+bandit23@bandit:/tmp/shiro23$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
 </code></pre>
@@ -731,20 +729,20 @@ while pin < 10000 :
 	pin +=1
 </code></pre>
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit24@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit24@bandit.labs.overthewire.org
 
-bandit23@bandit.labs.overthewire.org's password:
+bandit24@bandit.labs.overthewire.org's password:
 [...]
-bandit24@bandit:/tmp/ゃない24$ python s2.py > msg.txt
-bandit24@bandit:/tmp/ゃない24$ nc localhost 30002 < msg.txt > result.txt
-bandit24@bandit:/tmp/ゃない24$ uniq -c result.txt
+bandit24@bandit:/tmp/shiro24$ python s2.py > msg.txt
+bandit24@bandit:/tmp/shiro24$ nc localhost 30002 < msg.txt > result.txt
+bandit24@bandit:/tmp/shiro24$ uniq -c result.txt
       1 I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
    2403 Wrong! Please enter the correct pincode. Try again.
       1 Correct!
       1 The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
       1
       1 Exiting.
-bandit24@bandit:/tmp/ゃない24$ exit
+bandit24@bandit:/tmp/shiro24$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
 </code></pre>
@@ -753,14 +751,14 @@ Level 25
 
 Maybe in [level25](https://overthewire.org/wargames/bandit/bandit25.html) I didn't really got what was supposed to be done so once I logged in I saw the 'sshkey' file in there and I jusut download it with 'scp' and use it to log in the next level. ┐(´～｀)┌
 
-<pre><code class="shell-session">ゃない@3l10t: ~$ ssh ssh -p 2220 bandit24@bandit.labs.overthewire.org
+<pre><code class="shell-session hljs less">chomuske@random: ~$ ssh ssh -p 2220 bandit25@bandit.labs.overthewire.org
 
-bandit23@bandit.labs.overthewire.org's password:
+bandit25@bandit.labs.overthewire.org's password:
 [...]
 bandit25@bandit:~$ ls
 bandit26.sshkey
 [...]
-ゃない@3l10t: ~$ scp -P 2220 bandit25@bandit.labs.overthewire.org:~/bandit26.sshkey $(pwd)
+chomuske@random: ~$ scp -P 2220 bandit25@bandit.labs.overthewire.org:~/bandit26.sshkey $(pwd)
 This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
 
 bandit25@bandit.labs.overthewire.org's password:
