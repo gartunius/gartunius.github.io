@@ -4,4 +4,4 @@ So after my failed attempt to write a post about assembly ( I didn't wanna do a 
 
 # About Me
 
-I'm just a computer science student, who wants a place to share/"teach"(I've heard that explaining stuff helps with learning) the things I learn both in class, and on the Internet.
+I'm just a computer science student, who wants a place to share/"teach"(I've heard that explaining stuff helps with learning) the things I learn both in class, and on the Internet. (＾ω＾)
