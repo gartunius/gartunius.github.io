@@ -35,13 +35,14 @@ function showRandomMenu () {
 }
 
 function openAbout () {
-	if (postMenu.classList.contains("show")) {
+	window.open("https://gartunius.github.io/","_self");
+	/*if (postMenu.classList.contains("show")) {
 		postMenu.classList.toggle("show");
 		navBar.classList.toggle("show-left-border-curve");
 	}
 	if (randomMenu.classList.contains("show")) {
 		randomMenu.classList.toggle("show");
-	}
+	}*/
 }
 
 // Close the dropdown menu if the user clicks outside of it
