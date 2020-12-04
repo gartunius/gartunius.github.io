@@ -139,3 +139,13 @@
 	/*Colors*/
 	background-color: #3B3B3B;
 }
+
+/*---------------------------------
+        Responsive Content
+---------------------------------*/
+
+@media only screen and ( max-width: 800px ) {
+	.navBar {
+		width: 100%;
+	}
+}
